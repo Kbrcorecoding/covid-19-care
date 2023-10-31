@@ -1,0 +1,90 @@
+:root {
+  --dark-blue: #031B88;
+  --blue: #6096FD;
+  --light-blue: #AAB6FB;
+  --pink: #FB7B8E;
+  --light-pink: #FAA7B8;
+}
+* {
+  box-sizing: border-box;
+  font-family: Sans-serif;
+}
+body {
+  margin: 0px;
+}
+.header {
+  text-align: center;
+  color: white;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  padding-top: 20%;
+  position: fixed;
+  background: url("https://c.files.bbci.co.uk/B2AE/production/_115324754_gettyimages-1283824133.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+/*   background-position: -15px 0px !important; */
+}
+
+.nonheader {
+  position: relative;
+  top: 100vh;
+  background: white;
+}
+.navbar {
+  background: black;
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+  padding: 14px 20px;
+  float: left;
+ }
+.navbar a.right {
+  float: right;
+}
+.navbar a:hover{
+  background: var(--blue);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 30px;
+  font-size: 1.2rem;
+  font-family: arial;
+}
+.sidecontext {
+  flex: 30%;
+  background: #f1f1f1;
+  padding: 20px;
+}
+.maincontext {
+  flex: 70%;
+  padding: 20px;
+}
+img {
+  max-width: 100%;
+  padding: 10px;
+}
+
+.footer{
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column;
+  }
+ 
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: left;
+    width: 100%;
+  }
+}
